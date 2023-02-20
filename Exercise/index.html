@@ -1,20 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HTML Form </title>
-</head>
-<body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
-</body>
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Forms</title> 
+  <style> 
+    /* Styling */ 
+    .form-container { 
+      width: 500px; 
+      margin: 0 auto; 
+      text-align: center; 
+    } 
+    .form-header { 
+      font-size: 24px; 
+      margin-bottom: 30px; 
+    } 
+    .form-input { 
+      width: 100%; 
+      padding: 10px; 
+      margin-bottom: 20px; 
+    } 
+    .form-submit { 
+      background-color: #4CAF50; 
+      color: white; 
+      padding: 10px 20px; 
+      border: none; 
+      cursor: pointer; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <!-- Navigation Bar --> 
+  <div class="navbar"> 
+    <a href="#">Home</a> 
+    <a href="#">About</a> 
+    <a href="#">Contact</a> 
+  </div> 
+  <!-- Form Container --> 
+  <div class="form-container"> 
+    <h1 class="form-header">Forms</h1> 
+    <form> 
+      <!-- Name --> 
+      <div> 
+        <label for="name">Name:</label> 
+        <input type="text" id="name" class="form-input"> 
+      </div> 
+      <!-- Email --> 
+      <div> 
+        <label for="email">Email:</label> 
+        <input type="email" id="email" class="form-input"> 
+      </div> 
+      <!-- Gender --> 
+      <div> 
+        <label for="gender">Gender:</label> 
+        <input type="radio" id="male" name="gender" value="male"> 
+        <label for="male">Male</label> 
+        <input type="radio" id="female" name="gender" value="female"> 
+        <label for="female">Female</label> 
+      </div> 
+      <!-- Age --> 
+      <div> 
+        <label for="age">Age:</label> 
+        <input type="number" id="age" class="form-input"> 
+      </div> 
+      <!-- Submit Button --> 
+      <input type="submit" value="Submit" class="form-submit"> 
+    </form> 
+  </div> 
+</body> 
 </html>
